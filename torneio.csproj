@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BiliotecaTorneio\ModeloConfronto.cs" />
+    <Compile Include="BiliotecaTorneio\ModeloConfrontoEntrada.cs" />
+    <Compile Include="BiliotecaTorneio\ModeloPremio.cs" />
+    <Compile Include="BiliotecaTorneio\ModeloTime.cs" />
+    <Compile Include="BiliotecaTorneio\ModeloTorneio.cs" />
+    <Compile Include="BiliotecaTorneio\Pessoa.cs" />
     <Compile Include="CriarPremio.cs">
       <SubType>Form</SubType>
     </Compile>
