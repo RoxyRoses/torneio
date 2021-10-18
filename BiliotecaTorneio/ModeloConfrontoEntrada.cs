@@ -20,6 +20,12 @@ namespace torneio.BiliotecaTorneio
         /// representa o confronto que o time saiu vencedor
         /// </summary>
         public ModeloConfronto confrontoPai { get; set; }
+        ///
+
+        public ModeloConfrontoEntrada(double pontoInicial)
+        {
+            Console.WriteLine();
+        }
 
     }
 }

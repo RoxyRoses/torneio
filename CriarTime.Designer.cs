@@ -36,17 +36,18 @@ namespace torneio
             this.membroTimecomboBox = new System.Windows.Forms.ComboBox();
             this.AddMembroButton = new System.Windows.Forms.Button();
             this.addMembroGroupBox = new System.Windows.Forms.GroupBox();
-            this.Nomelabel = new System.Windows.Forms.Label();
-            this.sobrenomeLabel = new System.Windows.Forms.Label();
-            this.emailLabel = new System.Windows.Forms.Label();
-            this.celularLabel = new System.Windows.Forms.Label();
-            this.nomeTextBox = new System.Windows.Forms.TextBox();
-            this.sobrenomeTextBox = new System.Windows.Forms.TextBox();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.celularTextBox = new System.Windows.Forms.TextBox();
             this.criarMembroButton = new System.Windows.Forms.Button();
+            this.celularTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.sobrenomeTextBox = new System.Windows.Forms.TextBox();
+            this.nomeTextBox = new System.Windows.Forms.TextBox();
+            this.celularLabel = new System.Windows.Forms.Label();
+            this.emailLabel = new System.Windows.Forms.Label();
+            this.sobrenomeLabel = new System.Windows.Forms.Label();
+            this.Nomelabel = new System.Windows.Forms.Label();
             this.jogadorListBox = new System.Windows.Forms.ListBox();
             this.timeButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
             this.addMembroGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,35 +124,42 @@ namespace torneio
             this.addMembroGroupBox.TabStop = false;
             this.addMembroGroupBox.Text = "Adicionar Novo Membro";
             // 
-            // Nomelabel
+            // criarMembroButton
             // 
-            this.Nomelabel.AutoSize = true;
-            this.Nomelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nomelabel.Location = new System.Drawing.Point(6, 42);
-            this.Nomelabel.Name = "Nomelabel";
-            this.Nomelabel.Size = new System.Drawing.Size(114, 17);
-            this.Nomelabel.TabIndex = 8;
-            this.Nomelabel.Text = "Primeiro Nome";
+            this.criarMembroButton.Location = new System.Drawing.Point(59, 184);
+            this.criarMembroButton.Name = "criarMembroButton";
+            this.criarMembroButton.Size = new System.Drawing.Size(151, 23);
+            this.criarMembroButton.TabIndex = 8;
+            this.criarMembroButton.Text = "Criar Membro";
+            this.criarMembroButton.UseVisualStyleBackColor = true;
             // 
-            // sobrenomeLabel
+            // celularTextBox
             // 
-            this.sobrenomeLabel.AutoSize = true;
-            this.sobrenomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sobrenomeLabel.Location = new System.Drawing.Point(6, 74);
-            this.sobrenomeLabel.Name = "sobrenomeLabel";
-            this.sobrenomeLabel.Size = new System.Drawing.Size(90, 17);
-            this.sobrenomeLabel.TabIndex = 9;
-            this.sobrenomeLabel.Text = "Sobrenome";
+            this.celularTextBox.Location = new System.Drawing.Point(126, 135);
+            this.celularTextBox.Name = "celularTextBox";
+            this.celularTextBox.Size = new System.Drawing.Size(149, 23);
+            this.celularTextBox.TabIndex = 14;
             // 
-            // emailLabel
+            // emailTextBox
             // 
-            this.emailLabel.AutoSize = true;
-            this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailLabel.Location = new System.Drawing.Point(6, 107);
-            this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(47, 17);
-            this.emailLabel.TabIndex = 10;
-            this.emailLabel.Text = "Email";
+            this.emailTextBox.Location = new System.Drawing.Point(126, 107);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(149, 23);
+            this.emailTextBox.TabIndex = 13;
+            // 
+            // sobrenomeTextBox
+            // 
+            this.sobrenomeTextBox.Location = new System.Drawing.Point(126, 74);
+            this.sobrenomeTextBox.Name = "sobrenomeTextBox";
+            this.sobrenomeTextBox.Size = new System.Drawing.Size(149, 23);
+            this.sobrenomeTextBox.TabIndex = 12;
+            // 
+            // nomeTextBox
+            // 
+            this.nomeTextBox.Location = new System.Drawing.Point(126, 42);
+            this.nomeTextBox.Name = "nomeTextBox";
+            this.nomeTextBox.Size = new System.Drawing.Size(149, 23);
+            this.nomeTextBox.TabIndex = 8;
             // 
             // celularLabel
             // 
@@ -163,42 +171,35 @@ namespace torneio
             this.celularLabel.TabIndex = 11;
             this.celularLabel.Text = "Celular";
             // 
-            // nomeTextBox
+            // emailLabel
             // 
-            this.nomeTextBox.Location = new System.Drawing.Point(126, 42);
-            this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(149, 23);
-            this.nomeTextBox.TabIndex = 8;
+            this.emailLabel.AutoSize = true;
+            this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLabel.Location = new System.Drawing.Point(6, 107);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(47, 17);
+            this.emailLabel.TabIndex = 10;
+            this.emailLabel.Text = "Email";
             // 
-            // sobrenomeTextBox
+            // sobrenomeLabel
             // 
-            this.sobrenomeTextBox.Location = new System.Drawing.Point(126, 74);
-            this.sobrenomeTextBox.Name = "sobrenomeTextBox";
-            this.sobrenomeTextBox.Size = new System.Drawing.Size(149, 23);
-            this.sobrenomeTextBox.TabIndex = 12;
+            this.sobrenomeLabel.AutoSize = true;
+            this.sobrenomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sobrenomeLabel.Location = new System.Drawing.Point(6, 74);
+            this.sobrenomeLabel.Name = "sobrenomeLabel";
+            this.sobrenomeLabel.Size = new System.Drawing.Size(90, 17);
+            this.sobrenomeLabel.TabIndex = 9;
+            this.sobrenomeLabel.Text = "Sobrenome";
             // 
-            // emailTextBox
+            // Nomelabel
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(126, 107);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(149, 23);
-            this.emailTextBox.TabIndex = 13;
-            // 
-            // celularTextBox
-            // 
-            this.celularTextBox.Location = new System.Drawing.Point(126, 135);
-            this.celularTextBox.Name = "celularTextBox";
-            this.celularTextBox.Size = new System.Drawing.Size(149, 23);
-            this.celularTextBox.TabIndex = 14;
-            // 
-            // criarMembroButton
-            // 
-            this.criarMembroButton.Location = new System.Drawing.Point(59, 184);
-            this.criarMembroButton.Name = "criarMembroButton";
-            this.criarMembroButton.Size = new System.Drawing.Size(151, 23);
-            this.criarMembroButton.TabIndex = 8;
-            this.criarMembroButton.Text = "Criar Membro";
-            this.criarMembroButton.UseVisualStyleBackColor = true;
+            this.Nomelabel.AutoSize = true;
+            this.Nomelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nomelabel.Location = new System.Drawing.Point(6, 42);
+            this.Nomelabel.Name = "Nomelabel";
+            this.Nomelabel.Size = new System.Drawing.Size(114, 17);
+            this.Nomelabel.TabIndex = 8;
+            this.Nomelabel.Text = "Primeiro Nome";
             // 
             // jogadorListBox
             // 
@@ -217,11 +218,21 @@ namespace torneio
             this.timeButton.Text = "Criar Time";
             this.timeButton.UseVisualStyleBackColor = true;
             // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(662, 225);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(108, 103);
+            this.deleteButton.TabIndex = 16;
+            this.deleteButton.Text = "Deletar Selecionado";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            // 
             // CriarTime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 581);
+            this.ClientSize = new System.Drawing.Size(782, 581);
+            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.timeButton);
             this.Controls.Add(this.jogadorListBox);
             this.Controls.Add(this.addMembroGroupBox);
@@ -260,5 +271,6 @@ namespace torneio
         private System.Windows.Forms.Label Nomelabel;
         private System.Windows.Forms.ListBox jogadorListBox;
         private System.Windows.Forms.Button timeButton;
+        private System.Windows.Forms.Button deleteButton;
     }
 }

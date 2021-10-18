@@ -84,6 +84,12 @@
     <Compile Include="TorneioDashboard.Designer.cs">
       <DependentUpon>TorneioDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="TorneioUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TorneioUI.Designer.cs">
+      <DependentUpon>TorneioUI.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CriarPremio.resx">
       <DependentUpon>CriarPremio.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +113,9 @@
     </Compile>
     <EmbeddedResource Include="TorneioDashboard.resx">
       <DependentUpon>TorneioDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TorneioUI.resx">
+      <DependentUpon>TorneioUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

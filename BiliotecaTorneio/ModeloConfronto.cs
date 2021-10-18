@@ -8,9 +8,19 @@ namespace torneio.BiliotecaTorneio
 {
    public class ModeloConfronto
     {
-        public List<ModeloConfrontoEntrada> entradas { get; set; } = List<ModeloConfrontoEntrada>();
+        /// <summary>
+        /// represena lista de inscricoes
+        /// </summary>
+        public List<ModeloConfrontoEntrada> entradas { get; set; }
+        /// <summary>
+        /// representa o time ganhador
+        /// </summary>
         public ModeloTime ganhador { get; set; }
+        /// <summary>
+        /// representa o round que esta on confronto
+        /// </summary>
         public int roundConfronto { get; set; }
+
 
 
 

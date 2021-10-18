@@ -16,7 +16,7 @@ namespace torneio
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new torneioForm());
+            Application.Run(new TorneioUI());
         }
     }
 }
