@@ -139,6 +139,7 @@ namespace torneio
             this.premioButton.TabIndex = 10;
             this.premioButton.Text = "Criar Premio";
             this.premioButton.UseVisualStyleBackColor = true;
+            this.premioButton.Click += new System.EventHandler(this.premioButton_Click);
             // 
             // CriarPremio
             // 
@@ -158,6 +159,7 @@ namespace torneio
             this.Controls.Add(this.label1);
             this.Name = "CriarPremio";
             this.Text = "Criar Premio";
+            this.Load += new System.EventHandler(this.CriarPremio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -132,6 +132,7 @@ namespace torneio
             this.criarMembroButton.TabIndex = 8;
             this.criarMembroButton.Text = "Criar Membro";
             this.criarMembroButton.UseVisualStyleBackColor = true;
+            this.criarMembroButton.Click += new System.EventHandler(this.criarMembroButton_Click);
             // 
             // celularTextBox
             // 
@@ -244,6 +245,7 @@ namespace torneio
             this.Controls.Add(this.criarTimeLabel);
             this.Name = "CriarTime";
             this.Text = "Criar Time";
+            this.Load += new System.EventHandler(this.CriarTime_Load);
             this.addMembroGroupBox.ResumeLayout(false);
             this.addMembroGroupBox.PerformLayout();
             this.ResumeLayout(false);
